@@ -6,6 +6,8 @@ namespace BubbleShort_C
     {
         // Deklarasi array int dengan ukuran 20
         private int[] a = new int[20];
+        private int i;
+        private int n;
 
         // Deklarasi variabnel int untuk menyimpan banyak data pada array
 
@@ -29,7 +31,7 @@ namespace BubbleShort_C
             Console.WriteLine("-----------------------");
 
             // Pengguna memasukkan elemen pada array
-            for (int i = 0; i < new; i++)
+            for (int i = 0; i < i++)
             {
                 Console.Write("<" + (i + 1) + ">");
                 string s1 = Console.ReadLine();
@@ -44,6 +46,25 @@ namespace BubbleShort_C
             Console.WriteLine("---------------------------------");
             Console.WriteLine("Element Array yang telah tersusun");
             Console.WriteLine("---------------------------------");
-            for (int j =)
+            for (int j = 0; j < n; j++)
+            {
+                Console.WriteLine("");
+            }
+            Console.WriteLine("");
         }
+        public void BubleShortArray()
+        {
+            for (int i = 1; i < n; i++) // For n - passes
+            {
+                // Pada pass i, bandingkan n - i elemen pertama dengan elemen selanjutnya
+                for (int j = 0; j < n - i; j++)
+                {
+
+                }
+            }
+        }
+
+      
+      
+        
     }
