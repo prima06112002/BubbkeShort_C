@@ -81,6 +81,8 @@ namespace BubbleShort_C
             myList.read();
             // Pemanggilan fungsi untuk mengurutkan array
             myList.BubblesortArray();
+            // pemanggilan fungsi untuk menampilkan array yang tersusun
+            myList.display();
 
 
 }
