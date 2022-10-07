@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace BubbkeShort_C
 {
@@ -9,7 +10,7 @@ namespace BubbkeShort_C
         private int i;
         private int n;
 
-        // Deklarasi variabnel int untuk menyimpan banyak data pada array
+        // Deklarasi variabel int untuk menyimpan banyak data pada array
 
         // Fungsi / Method untuk menerima masukan
         public void read()
@@ -71,20 +72,23 @@ namespace BubbkeShort_C
             }
         }
 
-        static void Main(string[] args);
+        static void Main(string[] args)
         {
-            // Creating the object of the Bubblesort class
+            // Creating the object of the Bubbleshort class
             Program myList = new Program();
 
-        // Pemanggilan fungsi untuk menerima elemen array
+            // Pemanggilan fungsi untuk menerima elemen array
             myList.read();
-            // Pemanggilan fungsi untuk mengurutkan array
+            // pemanggilan fungsi untuk mengurutkan array
             myList.BubbleSortArray();
             // pemanggilan fungsi untuk menampilkan array yang tersusun
             myList.display();
-            // Exit
-            Console.WriteLine("\n\n tekan tombol Apa Saja Untuk Keluar.");
+            //Exit
+            Console.WriteLine("\n\n Tekan Tombol Apa Saja Untuk Keluar.");
             Console.Read();
         }
     }
 }
+
+
+      
