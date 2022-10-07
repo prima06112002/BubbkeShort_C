@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections;
 
-namespace BubbleShort_C
+namespace BubbkeShort_C
 {
-    class program
+    class Program
     {
         // Deklarasi array int dengan ukuran 20
         private int[] a = new int[20];
@@ -20,7 +19,7 @@ namespace BubbleShort_C
             {
                 Console.Write("Masukan banyaknya element pada array: ");
                 string s = Console.ReadLine();
-                new = Int32.Parse(s);
+                n = Int32.Parse(s);
                 if (n <= 20)
                     break;
                 else
@@ -32,7 +31,7 @@ namespace BubbleShort_C
             Console.WriteLine("-----------------------");
 
             // Pengguna memasukkan elemen pada array
-            for (int i = 0; i < i++)
+            for (int i = 0; i < n; i++)
             {
                 Console.Write("<" + (i + 1) + ">");
                 string s1 = Console.ReadLine();
@@ -53,7 +52,7 @@ namespace BubbleShort_C
             }
             Console.WriteLine("");
         }
-        public void BubleShortArray()
+        public void BubbleSortArray()
         {
             for (int i = 1; i < n; i++) // For n - passes
             {
@@ -77,20 +76,15 @@ namespace BubbleShort_C
             // Creating the object of the Bubblesort class
             Program myList = new Program();
 
-            // Pemanggilan fungsi untuk menerima elemen array
+        // Pemanggilan fungsi untuk menerima elemen array
             myList.read();
             // Pemanggilan fungsi untuk mengurutkan array
-            myList.BubblesortArray();
+            myList.BubbleSortArray();
             // pemanggilan fungsi untuk menampilkan array yang tersusun
             myList.display();
-
-
-}
-
-    internal class Program
-    {
-        public Program()
-        {
+            // Exit
+            Console.WriteLine("\n\n tekan tombol Apa Saja Untuk Keluar.");
+            Console.Read();
         }
     }
 }
