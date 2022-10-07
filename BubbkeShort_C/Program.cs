@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace BubbleShort_C
 {
@@ -71,17 +72,23 @@ namespace BubbleShort_C
             }
         }
 
-        static void Main(string[] args)
+        static void Main(string[] args);
+        {
             // Creating the object of the Bubblesort class
             Program myList = new Program();
+
+            // Pemanggilan fungsi untuk menerima elemen array
+            myList.read();
+            // Pemanggilan fungsi untuk mengurutkan array
+            myList.BubblesortArray();
 
 
 }
 
-            
-        
-
-      
-      
-        
+    internal class Program
+    {
+        public Program()
+        {
+        }
     }
+}
