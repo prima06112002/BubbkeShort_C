@@ -71,7 +71,11 @@ namespace BubbleShort_C
             }
         }
 
-        static void Main(string)
+        static void Main(string[] args)
+            // Creating the object of the Bubblesort class
+            Program myList = new Program();
+
+
 }
 
             
