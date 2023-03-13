@@ -5,17 +5,23 @@ namespace BubbkeShort_C
 {
     class Program
     {
-        // Deklarasi array int dengan ukuran 20
+        /// <summary>
+        /// Deklarasi array int dengan ukuran 20
+        /// </summary>
         private int[] a = new int[20];
         private int i;
         private int n;
 
-        // Deklarasi variabel int untuk menyimpan banyak data pada array
+        /// <summary>
+        /// Deklarasi variabel int untuk menyimpan banyak data pada array
+        /// </summary>
 
-        // Fungsi / Method untuk menerima masukan
+        /// Fungsi / Method untuk menerima masukan
         public void read()
         {
-            // menerima angka untuk menentukan banyaknya data yang disimpan pada array
+            /// menerima angka untuk menentukan banyaknya data yang disimpan pada array
+            /// <example> string s = membaca input dari pengguna,yaitu jumlah elemen pd array dan menyimpannya sebagai sebuah string
+            /// </example>
             while (true)
             {
                 Console.Write("Masukan banyaknya element pada array: ");
@@ -31,7 +37,7 @@ namespace BubbkeShort_C
             Console.WriteLine("Masukkan elemen array");
             Console.WriteLine("-----------------------");
 
-            // Pengguna memasukkan elemen pada array
+            /// Pengguna memasukkan elemen pada array
             for (int i = 0; i < n; i++)
             {
                 Console.Write("<" + (i + 1) + ">");
@@ -42,7 +48,12 @@ namespace BubbkeShort_C
         }
         public void display()
         {
-            // Menampilkan array yang tersusun
+            /// Menampilkan array yang tersusun
+            /// <example> Baris pertama sampai ketiga mencetak sebuah header yang terdiri dari tiga baris, di mana baris pertama dan ketiga dicetak kosong, sedangkan pada baris kedua dicetak garis pemisah yang terdiri dari beberapa tanda '-'.
+            /// Baris keempat memulai sebuah loop (pengulangan) for yang akan mencetak kosong sebanyak n kali ke dalam konsol. Variabel n di sini merupakan sebuah variabel yang mungkin didefinisikan sebelumnya dalam program.
+            /// Baris terakhir mencetak sebuah baris kosong di konsol.</example>
+          
+
             Console.WriteLine("");
             Console.WriteLine("---------------------------------");
             Console.WriteLine("Element Array yang telah tersusun");
@@ -55,14 +66,14 @@ namespace BubbkeShort_C
         }
         public void BubbleSortArray()
         {
-            for (int i = 1; i < n; i++) // For n - passes
+            for (int i = 1; i < n; i++) ///For n - passes
             {
-                // Pada pass i, bandingkan n - i elemen pertama dengan elemen selanjutnya
+                /// Pada pass i, bandingkan n - i elemen pertama dengan elemen selanjutnya
                 for (int j = 0; j < n - i; j++)
                 {
-                    if (a[j] > a[j + 1]) // jika elemen tidak dalam urutan yang benar
+                    if (a[j] > a[j + 1]) /// jika elemen tidak dalam urutan yang benar
                     {
-                        // Tukar elemen
+                        /// Tukar elemen
                         int temp;
                         temp = a[j];
                         a[j] = a[j + 1];
@@ -74,16 +85,16 @@ namespace BubbkeShort_C
 
         static void Main(string[] args)
         {
-            // Creating the object of the Bubbleshort class
+            /// <summary>Creating the object of the Bubbleshort class </summary>
             Program myList = new Program();
 
-            // Pemanggilan fungsi untuk menerima elemen array
+            /// Pemanggilan fungsi untuk menerima elemen array
             myList.read();
-            // pemanggilan fungsi untuk mengurutkan array
+            /// pemanggilan fungsi untuk mengurutkan array
             myList.BubbleSortArray();
-            // pemanggilan fungsi untuk menampilkan array yang tersusun
+            /// pemanggilan fungsi untuk menampilkan array yang tersusun
             myList.display();
-            //Exit
+            ///Exit
             Console.WriteLine("\n\n Tekan Tombol Apa Saja Untuk Keluar.");
             Console.Read();
         }
